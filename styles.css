@@ -1,0 +1,82 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    text-align: center;
+    background-image: url(counter.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:rgb(170, 6, 33, 1);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+button {
+    font-size: 12px;
+    justify-content: space-between;
+    margin: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(170, 6, 33, 1);
+    background-color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid rgb(170, 6, 33, 1);
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: rgb(170, 6, 33, 0.5);
+    color: white;
+}
+ 
+#value {
+    font-size: 20px;
+    font-weight: 800;
+    color:rgb(170, 6, 33, 1);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: none;
+        max-width: 100px;
+    }
+    button {
+        font-size: 7px;
+        margin: 4px
+    }
+    #value {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-image: url(./beauty.jpg);
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 500px;
+        color:rgb(170, 6, 33, 0.7);
+    }
+
+    #value {
+        font-size: 18px;
+        color:rgb(170, 6, 33, 0.7)
+    }
+
+    button {
+        font-size: 10px;
+        font-weight: 700;
+        color:rgb(170, 6, 33, 0.7);
+    }
+
+    }
